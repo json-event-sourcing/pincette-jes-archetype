@@ -1,0 +1,101 @@
+#set( $symbol_pound = '#' )
+#set( $symbol_dollar = '$' )
+#set( $symbol_escape = '\' )
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="es@localhost">
+  <database-model serializer="dbm" dbms="MONGO" family-id="MONGO" format-version="4.17">
+    <root id="1">
+      <ServerVersion>4.2.1</ServerVersion>
+    </root>
+    <schema id="2" parent="1" name="admin"/>
+    <schema id="3" parent="1" name="config"/>
+    <schema id="4" parent="1" name="es">
+      <Current>1</Current>
+    </schema>
+    <schema id="5" parent="1" name="local"/>
+    <table id="6" parent="4" name="plusminus-counter-dev"/>
+    <table id="7" parent="4" name="plusminus-counter-event-dev"/>
+    <column id="8" parent="6" name="_id">
+      <DataType>String(0)|12s</DataType>
+    </column>
+    <column id="9" parent="6" name="_corr">
+      <Position>1</Position>
+      <DataType>String(0)|12s</DataType>
+    </column>
+    <column id="10" parent="6" name="_deleted">
+      <Position>2</Position>
+      <DataType>Boolean|12s</DataType>
+    </column>
+    <column id="11" parent="6" name="_jwt">
+      <Position>3</Position>
+      <DataType>map(0)|4999544s</DataType>
+    </column>
+    <column id="12" parent="6" name="_jwt.sub">
+      <Position>4</Position>
+      <DataType>String(0)|12s</DataType>
+    </column>
+    <column id="13" parent="6" name="_seq">
+      <Position>5</Position>
+      <DataType>Long(0)|12s</DataType>
+    </column>
+    <column id="14" parent="6" name="_timestamp">
+      <Position>6</Position>
+      <DataType>Long(0)|12s</DataType>
+    </column>
+    <column id="15" parent="6" name="_type">
+      <Position>7</Position>
+      <DataType>String(0)|12s</DataType>
+    </column>
+    <column id="16" parent="6" name="value">
+      <Position>8</Position>
+      <DataType>Long(0)|12s</DataType>
+    </column>
+    <column id="17" parent="7" name="_id">
+      <DataType>String(0)|12s</DataType>
+    </column>
+    <column id="18" parent="7" name="_command">
+      <Position>1</Position>
+      <DataType>String(0)|12s</DataType>
+    </column>
+    <column id="19" parent="7" name="_corr">
+      <Position>2</Position>
+      <DataType>String(0)|12s</DataType>
+    </column>
+    <column id="20" parent="7" name="_jwt">
+      <Position>3</Position>
+      <DataType>map(0)|4999544s</DataType>
+    </column>
+    <column id="21" parent="7" name="_jwt.sub">
+      <Position>4</Position>
+      <DataType>String(0)|12s</DataType>
+    </column>
+    <column id="22" parent="7" name="_ops">
+      <Position>5</Position>
+      <DataType>list(0)|4999545s</DataType>
+    </column>
+    <column id="23" parent="7" name="_ops.op">
+      <Position>6</Position>
+      <DataType>String(0)|12s</DataType>
+    </column>
+    <column id="24" parent="7" name="_ops.path">
+      <Position>7</Position>
+      <DataType>String(0)|12s</DataType>
+    </column>
+    <column id="25" parent="7" name="_ops.value">
+      <Position>8</Position>
+      <DataType>Long(0)|12s</DataType>
+    </column>
+    <column id="26" parent="7" name="_seq">
+      <Position>9</Position>
+      <DataType>Long(0)|12s</DataType>
+    </column>
+    <column id="27" parent="7" name="_timestamp">
+      <Position>10</Position>
+      <DataType>Long(0)|12s</DataType>
+    </column>
+    <column id="28" parent="7" name="_type">
+      <Position>11</Position>
+      <DataType>String(0)|12s</DataType>
+    </column>
+  </database-model>
+</dataSource>

@@ -1,0 +1,402 @@
+#set( $symbol_pound = '#' )
+#set( $symbol_dollar = '$' )
+#set( $symbol_escape = '\' )
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1aa4bc29-863e-423f-ae7c-71aad0aba361" name="Default Changelist" comment="">
+      <change afterPath="${symbol_dollar}PROJECT_DIR${symbol_dollar}/LICENSE" afterDir="false" />
+      <change afterPath="${symbol_dollar}PROJECT_DIR${symbol_dollar}/src/test/java/${packageInPathFormat}/ReducerTest.java" afterDir="false" />
+      <change afterPath="${symbol_dollar}PROJECT_DIR${symbol_dollar}/src/test/resources/commands/00_put.json" afterDir="false" />
+      <change afterPath="${symbol_dollar}PROJECT_DIR${symbol_dollar}/src/test/resources/commands/01_plus.json" afterDir="false" />
+      <change afterPath="${symbol_dollar}PROJECT_DIR${symbol_dollar}/src/test/resources/commands/02_minus.json" afterDir="false" />
+      <change afterPath="${symbol_dollar}PROJECT_DIR${symbol_dollar}/src/test/resources/commands/03_delete.json" afterDir="false" />
+      <change afterPath="${symbol_dollar}PROJECT_DIR${symbol_dollar}/src/test/resources/replies/00_put.json" afterDir="false" />
+      <change afterPath="${symbol_dollar}PROJECT_DIR${symbol_dollar}/src/test/resources/replies/01_plus.json" afterDir="false" />
+      <change afterPath="${symbol_dollar}PROJECT_DIR${symbol_dollar}/src/test/resources/replies/02_minus.json" afterDir="false" />
+      <change afterPath="${symbol_dollar}PROJECT_DIR${symbol_dollar}/src/test/resources/replies/03_delete.json" afterDir="false" />
+      <change beforePath="${symbol_dollar}PROJECT_DIR${symbol_dollar}/README.md" beforeDir="false" afterPath="${symbol_dollar}PROJECT_DIR${symbol_dollar}/README.md" afterDir="false" />
+      <change beforePath="${symbol_dollar}PROJECT_DIR${symbol_dollar}/pom.xml" beforeDir="false" afterPath="${symbol_dollar}PROJECT_DIR${symbol_dollar}/pom.xml" afterDir="false" />
+      <change beforePath="${symbol_dollar}PROJECT_DIR${symbol_dollar}/src/main/java/${packageInPathFormat}/Application.java" beforeDir="false" afterPath="${symbol_dollar}PROJECT_DIR${symbol_dollar}/src/main/java/${packageInPathFormat}/Application.java" afterDir="false" />
+      <change beforePath="${symbol_dollar}PROJECT_DIR${symbol_dollar}/test/commands/00_put.json" beforeDir="false" />
+      <change beforePath="${symbol_dollar}PROJECT_DIR${symbol_dollar}/test/commands/01_plus.json" beforeDir="false" />
+      <change beforePath="${symbol_dollar}PROJECT_DIR${symbol_dollar}/test/commands/02_minus.json" beforeDir="false" />
+      <change beforePath="${symbol_dollar}PROJECT_DIR${symbol_dollar}/test/commands/03_delete.json" beforeDir="false" />
+      <change beforePath="${symbol_dollar}PROJECT_DIR${symbol_dollar}/test/replies/00_put.json" beforeDir="false" />
+      <change beforePath="${symbol_dollar}PROJECT_DIR${symbol_dollar}/test/replies/01_plus.json" beforeDir="false" />
+      <change beforePath="${symbol_dollar}PROJECT_DIR${symbol_dollar}/test/replies/02_minus.json" beforeDir="false" />
+      <change beforePath="${symbol_dollar}PROJECT_DIR${symbol_dollar}/test/replies/03_delete.json" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure${symbol_dollar}DbRootGroup" />
+        <item name="es@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure${symbol_dollar}DbRootGroup" />
+        <item name="es@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="es: schema" type="f0f64354:MongoImplModel${symbol_dollar}Schema" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="${symbol_dollar}PROJECT_DIR${symbol_dollar}" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1OXrsQFTfJ31mLTzjBOGUewvLVs" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mongo" />
+    <property name="GoToClass.includeLibraries" value="false" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="${symbol_dollar}PROJECT_DIR${symbol_dollar}" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.build.tools" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="Applet">
+      <option name="POLICY_FILE" value="${symbol_dollar}APPLICATION_HOME_DIR${symbol_dollar}/bin/appletviewer.policy" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
+      <Host>localhost</Host>
+      <Port>5050</Port>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="${symbol_dollar}PROJECT_DIR${symbol_dollar}" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="localhost" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="${package}.Application" />
+      <module name="${artifactId}" />
+      <option name="VM_PARAMETERS" value="-Dconfig.resource=application.conf" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="${symbol_dollar}PROJECT_DIR${symbol_dollar}" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="WORKING_DIRECTORY" value="${symbol_dollar}PROJECT_DIR${symbol_dollar}" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="${symbol_pound}org.jetbrains.idea.devkit.run.PluginConfigurationType">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file enabled="true" id="idea.log" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SbtLocalSettings">
+    <option name="modificationStamps">
+      <map>
+        <entry key="${symbol_dollar}USER_HOME${symbol_dollar}/Documents/git/play" value="1481291718000" />
+      </map>
+    </option>
+    <option name="projectSyncType">
+      <map>
+        <entry key="${symbol_dollar}USER_HOME${symbol_dollar}/Documents/git/davbox" value="PREVIEW" />
+        <entry key="${symbol_dollar}USER_HOME${symbol_dollar}/Documents/git/inv-api" value="PREVIEW" />
+        <entry key="${symbol_dollar}USER_HOME${symbol_dollar}/Documents/git/kans-api" value="PREVIEW" />
+        <entry key="${symbol_dollar}USER_HOME${symbol_dollar}/Documents/git/lars-aggregates" value="PREVIEW" />
+        <entry key="${symbol_dollar}USER_HOME${symbol_dollar}/Documents/git/lars-cmp" value="PREVIEW" />
+        <entry key="${symbol_dollar}USER_HOME${symbol_dollar}/Documents/git/lemonade-aws" value="PREVIEW" />
+        <entry key="${symbol_dollar}USER_HOME${symbol_dollar}/Documents/git/lemonade-jes" value="PREVIEW" />
+        <entry key="${symbol_dollar}USER_HOME${symbol_dollar}/Documents/git/lemonade-jes-util" value="PREVIEW" />
+        <entry key="${symbol_dollar}USER_HOME${symbol_dollar}/Documents/git/lemonade-jwt" value="PREVIEW" />
+        <entry key="${symbol_dollar}USER_HOME${symbol_dollar}/Documents/git/lemonade-mail" value="PREVIEW" />
+        <entry key="${symbol_dollar}USER_HOME${symbol_dollar}/Documents/git/lemonade-search-mongodb" value="PREVIEW" />
+        <entry key="${symbol_dollar}USER_HOME${symbol_dollar}/Documents/git/pincette-akka" value="PREVIEW" />
+        <entry key="${symbol_dollar}USER_HOME${symbol_dollar}/Documents/git/pincette-jes" value="PREVIEW" />
+        <entry key="${symbol_dollar}USER_HOME${symbol_dollar}/Documents/git/pincette-jsonfilter" value="PREVIEW" />
+        <entry key="${symbol_dollar}USER_HOME${symbol_dollar}/Documents/git/pincette-jwt" value="PREVIEW" />
+        <entry key="${symbol_dollar}USER_HOME${symbol_dollar}/Documents/git/pincette-xmlfilter" value="PREVIEW" />
+        <entry key="${symbol_dollar}USER_HOME${symbol_dollar}/Documents/git/unizo-common" value="PREVIEW" />
+        <entry key="${symbol_dollar}USER_HOME${symbol_dollar}/Documents/git/unizo-jobs" value="PREVIEW" />
+        <entry key="${symbol_dollar}USER_HOME${symbol_dollar}/Documents/git/unizo-play-util" value="PREVIEW" />
+        <entry key="${symbol_dollar}USER_HOME${symbol_dollar}/Documents/git/unizo-proxy" value="PREVIEW" />
+        <entry key="${symbol_dollar}USER_HOME${symbol_dollar}/Documents/git/unizo-sectorcrm-api" value="PREVIEW" />
+        <entry key="${symbol_dollar}PROJECT_DIR${symbol_dollar}/../davbox" value="PREVIEW" />
+        <entry key="${symbol_dollar}PROJECT_DIR${symbol_dollar}/../inv-lars-events" value="PREVIEW" />
+        <entry key="${symbol_dollar}PROJECT_DIR${symbol_dollar}/../inv-mail" value="PREVIEW" />
+        <entry key="${symbol_dollar}PROJECT_DIR${symbol_dollar}/../lars-event-tap" value="PREVIEW" />
+        <entry key="${symbol_dollar}PROJECT_DIR${symbol_dollar}/../lars-kg" value="PREVIEW" />
+        <entry key="${symbol_dollar}PROJECT_DIR${symbol_dollar}/../lemonade-jsontoelastic" value="PREVIEW" />
+        <entry key="${symbol_dollar}PROJECT_DIR${symbol_dollar}/../lemonade-loaddata" value="PREVIEW" />
+        <entry key="${symbol_dollar}PROJECT_DIR${symbol_dollar}/../lemonade-pass" value="PREVIEW" />
+        <entry key="${symbol_dollar}PROJECT_DIR${symbol_dollar}/../lemonade-um-api" value="PREVIEW" />
+        <entry key="${symbol_dollar}PROJECT_DIR${symbol_dollar}/../pincette-rs" value="PREVIEW" />
+      </map>
+    </option>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="StructureViewFactory">
+    <option name="ACTIVE_ACTIONS" value=",ALPHA_COMPARATOR" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1aa4bc29-863e-423f-ae7c-71aad0aba361" name="Default Changelist" comment="" />
+      <created>1560417050879</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1560417050879</updated>
+      <workItem from="1560417052437" duration="1340000" />
+      <workItem from="1560418661710" duration="188000" />
+      <workItem from="1560418857482" duration="14913000" />
+      <workItem from="1560494960005" duration="3610000" />
+      <workItem from="1560526180325" duration="4482000" />
+      <workItem from="1560860590145" duration="5250000" />
+      <workItem from="1561015858594" duration="200000" />
+      <workItem from="1561040374971" duration="1122000" />
+      <workItem from="1561390932008" duration="735000" />
+      <workItem from="1561635591912" duration="334000" />
+      <workItem from="1561712661083" duration="3023000" />
+      <workItem from="1561993060485" duration="6588000" />
+      <workItem from="1562145936910" duration="133000" />
+      <workItem from="1562230506459" duration="7839000" />
+      <workItem from="1562337803068" duration="3548000" />
+      <workItem from="1562656825493" duration="33030000" />
+      <workItem from="1563367005567" duration="5630000" />
+      <workItem from="1563377143242" duration="30000" />
+      <workItem from="1563377298372" duration="1203000" />
+      <workItem from="1563443428038" duration="992000" />
+      <workItem from="1563451977401" duration="63000" />
+      <workItem from="1563543725554" duration="351000" />
+      <workItem from="1563868820747" duration="4570000" />
+      <workItem from="1564040445937" duration="149000" />
+      <workItem from="1564134990595" duration="308000" />
+      <workItem from="1566811632331" duration="1586000" />
+      <workItem from="1566839100277" duration="3052000" />
+      <workItem from="1566896787779" duration="13000" />
+      <workItem from="1570086677419" duration="1588000" />
+      <workItem from="1573047295173" duration="4975000" />
+      <workItem from="1573137420443" duration="5305000" />
+      <workItem from="1574079212527" duration="1111000" />
+      <workItem from="1574946655504" duration="458000" />
+      <workItem from="1574976162307" duration="1101000" />
+      <workItem from="1575303942510" duration="1424000" />
+      <workItem from="1575371092322" duration="106000" />
+      <workItem from="1576064864647" duration="1349000" />
+      <workItem from="1576481688154" duration="1012000" />
+      <workItem from="1576577398100" duration="1591000" />
+      <workItem from="1576584457884" duration="10328000" />
+      <workItem from="1576745945675" duration="805000" />
+      <workItem from="1576834282214" duration="7570000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="104" y="62" key="${symbol_pound}com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1576746147606">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="104" y="62" key="${symbol_pound}com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.800@0.0.1280.800" timestamp="1576746147606" />
+    <state x="377" y="191" key="${symbol_pound}com.intellij.ide.util.TreeClassChooserDialog" timestamp="1576577729953">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="377" y="191" key="${symbol_pound}com.intellij.ide.util.TreeClassChooserDialog/0.0.1280.800@0.0.1280.800" timestamp="1576577729953" />
+    <state x="328" y="135" key="${symbol_pound}com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1575371190771">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="328" y="135" key="${symbol_pound}com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1280.800@0.0.1280.800" timestamp="1575371190771" />
+    <state x="98" y="160" width="1110" height="559" key="${symbol_pound}xdebugger.XInspectDialog" timestamp="1576594556007">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="98" y="160" width="1110" height="559" key="${symbol_pound}xdebugger.XInspectDialog/0.0.1280.800@0.0.1280.800" timestamp="1576594556007" />
+    <state width="1238" height="204" key="GridCell.Tab.0.bottom" timestamp="1576849994279">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="204" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1576849994279" />
+    <state width="444" height="678" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1576595449396" />
+    <state width="1238" height="204" key="GridCell.Tab.0.center" timestamp="1576849994278">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="204" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1576849994278" />
+    <state width="444" height="678" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1576595449390" />
+    <state width="1238" height="204" key="GridCell.Tab.0.left" timestamp="1576849994277">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="204" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1576849994277" />
+    <state width="444" height="678" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1576595449387" />
+    <state width="1238" height="204" key="GridCell.Tab.0.right" timestamp="1576849994279">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="204" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1576849994279" />
+    <state width="444" height="678" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1576595449395" />
+    <state width="444" height="678" key="GridCell.Tab.1.bottom" timestamp="1576749007662">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="444" height="678" key="GridCell.Tab.1.bottom/0.0.1280.800@0.0.1280.800" timestamp="1576749007662" />
+    <state width="444" height="678" key="GridCell.Tab.1.bottom/0.23.1280.777@0.23.1280.777" timestamp="1576597202437" />
+    <state width="444" height="678" key="GridCell.Tab.1.center" timestamp="1576749007661">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="444" height="678" key="GridCell.Tab.1.center/0.0.1280.800@0.0.1280.800" timestamp="1576749007661" />
+    <state width="444" height="678" key="GridCell.Tab.1.center/0.23.1280.777@0.23.1280.777" timestamp="1576597202434" />
+    <state width="444" height="678" key="GridCell.Tab.1.left" timestamp="1576749007660">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="444" height="678" key="GridCell.Tab.1.left/0.0.1280.800@0.0.1280.800" timestamp="1576749007660" />
+    <state width="444" height="678" key="GridCell.Tab.1.left/0.23.1280.777@0.23.1280.777" timestamp="1576597202433" />
+    <state width="444" height="678" key="GridCell.Tab.1.right" timestamp="1576749007662">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="444" height="678" key="GridCell.Tab.1.right/0.0.1280.800@0.0.1280.800" timestamp="1576749007662" />
+    <state width="444" height="678" key="GridCell.Tab.1.right/0.23.1280.777@0.23.1280.777" timestamp="1576597202435" />
+    <state width="444" height="678" key="GridCell.Tab.2.bottom" timestamp="1576749007659">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="444" height="678" key="GridCell.Tab.2.bottom/0.0.1280.800@0.0.1280.800" timestamp="1576749007659" />
+    <state width="444" height="678" key="GridCell.Tab.2.bottom/0.23.1280.777@0.23.1280.777" timestamp="1576595448662" />
+    <state width="444" height="678" key="GridCell.Tab.2.center" timestamp="1576749007658">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="444" height="678" key="GridCell.Tab.2.center/0.0.1280.800@0.0.1280.800" timestamp="1576749007658" />
+    <state width="444" height="678" key="GridCell.Tab.2.center/0.23.1280.777@0.23.1280.777" timestamp="1576595448659" />
+    <state width="444" height="678" key="GridCell.Tab.2.left" timestamp="1576749007657">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="444" height="678" key="GridCell.Tab.2.left/0.0.1280.800@0.0.1280.800" timestamp="1576749007657" />
+    <state width="444" height="678" key="GridCell.Tab.2.left/0.23.1280.777@0.23.1280.777" timestamp="1576595448657" />
+    <state width="444" height="678" key="GridCell.Tab.2.right" timestamp="1576749007659">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="444" height="678" key="GridCell.Tab.2.right/0.0.1280.800@0.0.1280.800" timestamp="1576749007659" />
+    <state width="444" height="678" key="GridCell.Tab.2.right/0.23.1280.777@0.23.1280.777" timestamp="1576595449276" />
+    <state x="128" y="23" width="1024" height="777" key="SettingsEditor" timestamp="1576844307049">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="128" y="23" width="1024" height="777" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1576844307049" />
+    <state x="166" y="143" width="947" height="590" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory${symbol_dollar}2" timestamp="1576592633442">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="166" y="143" width="947" height="590" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory${symbol_dollar}2/0.0.1280.800@0.0.1280.800" timestamp="1576592633442" />
+    <state x="305" y="185" width="670" height="675" key="run.anything.popup" timestamp="1576849994302">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="305" y="185" width="670" height="675" key="run.anything.popup/0.0.1280.800@0.0.1280.800" timestamp="1576849994302" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint type="java-exception">
+          <properties class="org.bson.BsonSerializationException" package="org.bson" />
+          <option name="timeStamp" value="13" />
+        </breakpoint>
+        <breakpoint type="java-exception">
+          <properties class="java.lang.IllegalStateException" package="java.lang" />
+          <option name="timeStamp" value="22" />
+        </breakpoint>
+        <breakpoint type="java-exception">
+          <properties class="java.lang.ClassCastException" package="java.lang" />
+          <option name="timeStamp" value="30" />
+        </breakpoint>
+        <breakpoint type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="31" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="mavenExecuteGoalHistory">
+    <option value="" />
+  </component>
+</project>
