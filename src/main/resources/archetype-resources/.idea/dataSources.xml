@@ -10,5 +10,11 @@
       <jdbc-driver>com.dbschema.MongoJdbcDriver</jdbc-driver>
       <jdbc-url>mongodb://localhost:27017/es</jdbc-url>
     </data-source>
+    <data-source source="LOCAL" name="tst" uuid="932cf403-9c10-4a85-af4f-f3fa52886342">
+      <driver-ref>mongo</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.dbschema.MongoJdbcDriver</jdbc-driver>
+      <jdbc-url>mongodb+srv://lemonade-eesba.mongodb.net/?retryWrites=true&amp;w=majority</jdbc-url>
+    </data-source>
   </component>
 </project>

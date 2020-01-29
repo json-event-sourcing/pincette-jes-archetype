@@ -15,7 +15,7 @@ import static java.util.logging.Logger.getLogger;
 import static javax.json.Json.createObjectBuilder;
 import static javax.json.Json.createValue;
 import static ${groupId}.jes.elastic.APM.monitor;
-import static ${groupId}.jes.elastic.Logging.log;
+import static ${groupId}.jes.elastic.Logging.logKafka;
 import static ${groupId}.jes.util.Configuration.loadDefault;
 import static ${groupId}.jes.util.Event.changed;
 import static ${groupId}.jes.util.JsonFields.COMMAND;
@@ -54,12 +54,12 @@ public class Application {
   private static final String AUTH = "authorizationHeader";
   private static final String DEV = "dev";
   private static final String ELASTIC_APM = "elastic.apm";
-  private static final String ELASTIC_LOG = "elastic.log";
   private static final String ENVIRONMENT = "environment";
   private static final String FANOUT = "fanout";
   private static final String INFO = "INFO";
   private static final String KAFKA = "kafka";
   private static final String LOG_LEVEL = "logLevel";
+  private static final String LOG_TOPIC = "logTopic";
   private static final String MINUS = "minus";
   private static final String MONGODB_DATABASE = "mongodb.database";
   private static final String MONGODB_URI = "mongodb.uri";
@@ -68,7 +68,7 @@ public class Application {
   private static final String REALM_KEY = "realmKey";
   private static final String URI = "uri";
   private static final String VALUE = "value";
-  private static final String VERSION = "1.0";
+  private static final String VERSION = "${version}";
 
   static StreamsBuilder createApp(
       final StreamsBuilder builder, final Config config, final MongoClient mongoClient) {
@@ -83,9 +83,11 @@ public class Application {
             .withMongoDatabase(mongoClient.getDatabase(config.getString(MONGODB_DATABASE)))
             .withBreakingTheGlass()
             .withMonitoring(true)
-            .withAudit(AUDIT + "-" + DEV)
+            .withAudit(AUDIT + "-" + environment)
             .withReducer(PLUS, (command, currentState) -> reduce(currentState, v -> v + 1))
             .withReducer(MINUS, (command, currentState) -> reduce(currentState, v -> v - 1));
+
+    aggregate.build();
 
     tryToGetSilent(() -> config.getConfig(FANOUT))
         .ifPresent(
@@ -94,23 +96,12 @@ public class Application {
                     aggregate.replies(), fanout.getString(REALM_ID), fanout.getString(REALM_KEY)));
 
     tryToGetSilent(() -> config.getConfig(ELASTIC_APM))
-        .ifPresent(apm -> monitor(aggregate, config.getString(URI), config.getString(AUTH)));
+        .ifPresent(apm -> monitor(aggregate, apm.getString(URI), apm.getString(AUTH)));
 
-    tryToGetSilent(() -> config.getConfig(ELASTIC_LOG))
-        .ifPresent(
-            log -> {
-              log(aggregate, logLevel, VERSION, log.getString(URI), log.getString(AUTH));
+    tryToGetSilent(() -> config.getString(LOG_TOPIC))
+        .ifPresent(topic -> logKafka(aggregate, logLevel, VERSION, topic));
 
-              log(
-                  getLogger(APP),
-                  logLevel,
-                  VERSION,
-                  environment,
-                  log.getString(URI),
-                  log.getString(AUTH));
-            });
-
-    return aggregate.build();
+    return builder;
   }
 
   private static CompletionStage<JsonObject> createCommand(final JsonObject event) {

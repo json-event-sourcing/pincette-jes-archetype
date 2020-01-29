@@ -5,8 +5,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1aa4bc29-863e-423f-ae7c-71aad0aba361" name="Default Changelist" comment="">
+      <change beforePath="${symbol_dollar}PROJECT_DIR${symbol_dollar}/conf/application.conf" beforeDir="false" afterPath="${symbol_dollar}PROJECT_DIR${symbol_dollar}/conf/application.conf" afterDir="false" />
+      <change beforePath="${symbol_dollar}PROJECT_DIR${symbol_dollar}/create_topics.sh" beforeDir="false" afterPath="${symbol_dollar}PROJECT_DIR${symbol_dollar}/create_topics.sh" afterDir="false" />
       <change beforePath="${symbol_dollar}PROJECT_DIR${symbol_dollar}/pom.xml" beforeDir="false" afterPath="${symbol_dollar}PROJECT_DIR${symbol_dollar}/pom.xml" afterDir="false" />
       <change beforePath="${symbol_dollar}PROJECT_DIR${symbol_dollar}/src/main/java/${packageInPathFormat}/Application.java" beforeDir="false" afterPath="${symbol_dollar}PROJECT_DIR${symbol_dollar}/src/main/java/${packageInPathFormat}/Application.java" afterDir="false" />
+      <change beforePath="${symbol_dollar}PROJECT_DIR${symbol_dollar}/src/main/resources/log4j.properties" beforeDir="false" afterPath="${symbol_dollar}PROJECT_DIR${symbol_dollar}/src/main/resources/log4j.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,8 +37,12 @@
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure${symbol_dollar}DbRootGroup" />
-        <item name="es@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="es: schema" type="f0f64354:MongoImplModel${symbol_dollar}Schema" />
+        <item name="tst" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure${symbol_dollar}DbRootGroup" />
+        <item name="tst" type="feb32156:DbDataSourceImpl" />
+        <item name="es-tst: schema" type="f0f64354:MongoImplModel${symbol_dollar}Schema" />
       </path>
     </expand>
     <select />
@@ -98,7 +105,7 @@
       <command value="mvn clean install" />
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.tst">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="${symbol_dollar}APPLICATION_HOME_DIR${symbol_dollar}/bin/appletviewer.policy" />
       <method v="2">
@@ -118,7 +125,15 @@
     <configuration name="localhost" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="${package}.Application" />
       <module name="${artifactId}" />
-      <option name="VM_PARAMETERS" value="-Dconfig.resource=application.conf" />
+      <option name="VM_PARAMETERS" value="-Dconfig.resource=werner.conf" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="tst" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="${package}.Application" />
+      <module name="${artifactId}" />
+      <option name="VM_PARAMETERS" value="-Dconfig.resource=tst.conf" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -154,6 +169,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.localhost" />
+      <item itemvalue="Application.tst" />
+    </list>
   </component>
   <component name="SbtLocalSettings">
     <option name="modificationStamps">
@@ -265,7 +284,10 @@
       <workItem from="1576745945675" duration="805000" />
       <workItem from="1576834282214" duration="7796000" />
       <workItem from="1578053827024" duration="826000" />
-      <workItem from="1578486644672" duration="13967000" />
+      <workItem from="1578486644672" duration="14170000" />
+      <workItem from="1579103679244" duration="2428000" />
+      <workItem from="1579881369399" duration="9689000" />
+      <workItem from="1580209115567" duration="8756000" />
     </task>
     <servers />
   </component>
@@ -273,14 +295,18 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="104" y="62" key="${symbol_pound}com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578488988431">
+    <state x="233" y="77" width="697" height="607" key="${symbol_pound}com.intellij.debugger.actions.ViewTextAction" timestamp="1580287318916">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="104" y="62" key="${symbol_pound}com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.800@0.0.1280.800" timestamp="1578488988431" />
-    <state x="377" y="191" key="${symbol_pound}com.intellij.ide.util.TreeClassChooserDialog" timestamp="1576577729953">
+    <state x="233" y="77" width="697" height="607" key="${symbol_pound}com.intellij.debugger.actions.ViewTextAction/0.0.1280.800@0.0.1280.800" timestamp="1580287318916" />
+    <state x="104" y="62" key="${symbol_pound}com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580287378434">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="377" y="191" key="${symbol_pound}com.intellij.ide.util.TreeClassChooserDialog/0.0.1280.800@0.0.1280.800" timestamp="1576577729953" />
+    <state x="104" y="62" key="${symbol_pound}com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.800@0.0.1280.800" timestamp="1580287378434" />
+    <state x="377" y="191" key="${symbol_pound}com.intellij.ide.util.TreeClassChooserDialog" timestamp="1580131982424">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="377" y="191" key="${symbol_pound}com.intellij.ide.util.TreeClassChooserDialog/0.0.1280.800@0.0.1280.800" timestamp="1580131982424" />
     <state x="328" y="135" key="${symbol_pound}com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1575371190771">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
@@ -289,78 +315,82 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="98" y="160" width="1110" height="559" key="${symbol_pound}xdebugger.XInspectDialog/0.0.1280.800@0.0.1280.800" timestamp="1576594556007" />
-    <state width="486" height="678" key="GridCell.Tab.0.bottom" timestamp="1578575355109">
+    <state width="1238" height="204" key="GridCell.Tab.0.bottom" timestamp="1580317640428">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="486" height="678" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1578575355109" />
+    <state width="1238" height="204" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1580317640428" />
     <state width="444" height="678" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1576595449396" />
-    <state width="486" height="678" key="GridCell.Tab.0.center" timestamp="1578575355108">
+    <state width="1238" height="204" key="GridCell.Tab.0.center" timestamp="1580317640426">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="486" height="678" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1578575355108" />
+    <state width="1238" height="204" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1580317640426" />
     <state width="444" height="678" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1576595449390" />
-    <state width="486" height="678" key="GridCell.Tab.0.left" timestamp="1578575355107">
+    <state width="1238" height="204" key="GridCell.Tab.0.left" timestamp="1580317640424">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="486" height="678" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1578575355107" />
+    <state width="1238" height="204" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1580317640424" />
     <state width="444" height="678" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1576595449387" />
-    <state width="486" height="678" key="GridCell.Tab.0.right" timestamp="1578575355108">
+    <state width="1238" height="204" key="GridCell.Tab.0.right" timestamp="1580317640427">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="486" height="678" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1578575355108" />
+    <state width="1238" height="204" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1580317640427" />
     <state width="444" height="678" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1576595449395" />
-    <state width="486" height="678" key="GridCell.Tab.1.bottom" timestamp="1578575355116">
+    <state width="486" height="678" key="GridCell.Tab.1.bottom" timestamp="1580317379609">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="486" height="678" key="GridCell.Tab.1.bottom/0.0.1280.800@0.0.1280.800" timestamp="1578575355116" />
-    <state width="444" height="678" key="GridCell.Tab.1.bottom/0.23.1280.777@0.23.1280.777" timestamp="1578503316240" />
-    <state width="486" height="678" key="GridCell.Tab.1.center" timestamp="1578575355115">
+    <state width="486" height="678" key="GridCell.Tab.1.bottom/0.0.1280.800@0.0.1280.800" timestamp="1580317379609" />
+    <state width="486" height="678" key="GridCell.Tab.1.bottom/0.23.1280.777@0.23.1280.777" timestamp="1580299805311" />
+    <state width="486" height="678" key="GridCell.Tab.1.center" timestamp="1580317379607">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="486" height="678" key="GridCell.Tab.1.center/0.0.1280.800@0.0.1280.800" timestamp="1578575355115" />
-    <state width="444" height="678" key="GridCell.Tab.1.center/0.23.1280.777@0.23.1280.777" timestamp="1578503316237" />
-    <state width="486" height="678" key="GridCell.Tab.1.left" timestamp="1578575355114">
+    <state width="486" height="678" key="GridCell.Tab.1.center/0.0.1280.800@0.0.1280.800" timestamp="1580317379607" />
+    <state width="486" height="678" key="GridCell.Tab.1.center/0.23.1280.777@0.23.1280.777" timestamp="1580299805308" />
+    <state width="486" height="678" key="GridCell.Tab.1.left" timestamp="1580317379606">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="486" height="678" key="GridCell.Tab.1.left/0.0.1280.800@0.0.1280.800" timestamp="1578575355114" />
-    <state width="444" height="678" key="GridCell.Tab.1.left/0.23.1280.777@0.23.1280.777" timestamp="1578503316235" />
-    <state width="486" height="678" key="GridCell.Tab.1.right" timestamp="1578575355116">
+    <state width="486" height="678" key="GridCell.Tab.1.left/0.0.1280.800@0.0.1280.800" timestamp="1580317379606" />
+    <state width="486" height="678" key="GridCell.Tab.1.left/0.23.1280.777@0.23.1280.777" timestamp="1580299805305" />
+    <state width="486" height="678" key="GridCell.Tab.1.right" timestamp="1580317379608">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="486" height="678" key="GridCell.Tab.1.right/0.0.1280.800@0.0.1280.800" timestamp="1578575355116" />
-    <state width="444" height="678" key="GridCell.Tab.1.right/0.23.1280.777@0.23.1280.777" timestamp="1578503316238" />
-    <state width="486" height="678" key="GridCell.Tab.2.bottom" timestamp="1578575355113">
+    <state width="486" height="678" key="GridCell.Tab.1.right/0.0.1280.800@0.0.1280.800" timestamp="1580317379608" />
+    <state width="486" height="678" key="GridCell.Tab.1.right/0.23.1280.777@0.23.1280.777" timestamp="1580299805309" />
+    <state width="486" height="678" key="GridCell.Tab.2.bottom" timestamp="1580317379604">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="486" height="678" key="GridCell.Tab.2.bottom/0.0.1280.800@0.0.1280.800" timestamp="1578575355113" />
+    <state width="486" height="678" key="GridCell.Tab.2.bottom/0.0.1280.800@0.0.1280.800" timestamp="1580317379604" />
     <state width="444" height="678" key="GridCell.Tab.2.bottom/0.23.1280.777@0.23.1280.777" timestamp="1576595448662" />
-    <state width="486" height="678" key="GridCell.Tab.2.center" timestamp="1578575355112">
+    <state width="486" height="678" key="GridCell.Tab.2.center" timestamp="1580317379599">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="486" height="678" key="GridCell.Tab.2.center/0.0.1280.800@0.0.1280.800" timestamp="1578575355112" />
+    <state width="486" height="678" key="GridCell.Tab.2.center/0.0.1280.800@0.0.1280.800" timestamp="1580317379599" />
     <state width="444" height="678" key="GridCell.Tab.2.center/0.23.1280.777@0.23.1280.777" timestamp="1576595448659" />
-    <state width="486" height="678" key="GridCell.Tab.2.left" timestamp="1578575355111">
+    <state width="486" height="678" key="GridCell.Tab.2.left" timestamp="1580317379596">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="486" height="678" key="GridCell.Tab.2.left/0.0.1280.800@0.0.1280.800" timestamp="1578575355111" />
+    <state width="486" height="678" key="GridCell.Tab.2.left/0.0.1280.800@0.0.1280.800" timestamp="1580317379596" />
     <state width="444" height="678" key="GridCell.Tab.2.left/0.23.1280.777@0.23.1280.777" timestamp="1576595448657" />
-    <state width="486" height="678" key="GridCell.Tab.2.right" timestamp="1578575355113">
+    <state width="486" height="678" key="GridCell.Tab.2.right" timestamp="1580317379602">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="486" height="678" key="GridCell.Tab.2.right/0.0.1280.800@0.0.1280.800" timestamp="1578575355113" />
+    <state width="486" height="678" key="GridCell.Tab.2.right/0.0.1280.800@0.0.1280.800" timestamp="1580317379602" />
     <state width="444" height="678" key="GridCell.Tab.2.right/0.23.1280.777@0.23.1280.777" timestamp="1576595449276" />
-    <state x="128" y="23" width="1024" height="777" key="SettingsEditor" timestamp="1576844307049">
+    <state x="128" y="23" width="1024" height="777" key="SettingsEditor" timestamp="1579881831715">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="128" y="23" width="1024" height="777" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1576844307049" />
-    <state x="50" y="143" width="1063" height="590" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory${symbol_dollar}2" timestamp="1578505461699">
+    <state x="128" y="23" width="1024" height="777" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1579881831715" />
+    <state x="50" y="143" width="1063" height="590" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory${symbol_dollar}2" timestamp="1580290851316">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="50" y="143" width="1063" height="590" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory${symbol_dollar}2/0.0.1280.800@0.0.1280.800" timestamp="1578505461699" />
-    <state x="305" y="185" width="670" height="675" key="run.anything.popup" timestamp="1576849994302">
+    <state x="50" y="143" width="1063" height="590" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory${symbol_dollar}2/0.0.1280.800@0.0.1280.800" timestamp="1580290851316" />
+    <state x="305" y="185" width="670" height="675" key="run.anything.popup" timestamp="1580317621719">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="305" y="185" width="670" height="675" key="run.anything.popup/0.0.1280.800@0.0.1280.800" timestamp="1576849994302" />
+    <state x="305" y="185" width="670" height="675" key="run.anything.popup/0.0.1280.800@0.0.1280.800" timestamp="1580317621719" />
+    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup" timestamp="1580321338640">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1580321338640" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -380,6 +410,10 @@
         <breakpoint type="java-exception">
           <properties class="java.lang.NullPointerException" package="java.lang" />
           <option name="timeStamp" value="31" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="com.mongodb.MongoCommandException" package="com.mongodb" />
+          <option name="timeStamp" value="32" />
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>

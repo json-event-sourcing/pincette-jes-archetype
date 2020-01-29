@@ -62,7 +62,9 @@
       <directory></directory>
       <includes>
         <include>LICENSE</include>
+        <include>create_archetype.sh</include>
         <include>README.md</include>
+        <include>create_topics_tst.sh</include>
         <include>.gitignore</include>
         <include>create_topics.sh</include>
       </includes>
