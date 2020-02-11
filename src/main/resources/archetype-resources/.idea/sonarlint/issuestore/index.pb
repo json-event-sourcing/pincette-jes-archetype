@@ -11,3 +11,9 @@ e
 5src/test/java/net/pincette/plusminus/ReducerTest.java,2/8/28d810e97445a9627683a6058f9f4c9304b1b7f6
 @
 conf/werner.conf,1/6/16ab2ad41e391183da994574081e48203fe4fbe6
+=
+conf/tst.conf,1/7/17bfe7d20a6cbaecb11abdd7c54dcba7992183f0
+@
+create_topics.sh,9/8/981b65e354b64d240aacee560b88d2035829094d
+C
+create_archetype.sh,1/d/1d259415d180834a57e3820800fa6603ef2ae9ee

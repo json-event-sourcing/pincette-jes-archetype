@@ -68,7 +68,7 @@ public class Application {
   private static final String REALM_KEY = "realmKey";
   private static final String URI = "uri";
   private static final String VALUE = "value";
-  private static final String VERSION = "${version}";
+  private static final String VERSION = "1.0.3";
 
   static StreamsBuilder createApp(
       final StreamsBuilder builder, final Config config, final MongoClient mongoClient) {
