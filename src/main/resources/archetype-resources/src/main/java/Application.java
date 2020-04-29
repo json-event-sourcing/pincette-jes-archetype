@@ -14,7 +14,6 @@ import static java.util.logging.Level.parse;
 import static java.util.logging.Logger.getLogger;
 import static javax.json.Json.createObjectBuilder;
 import static javax.json.Json.createValue;
-import static ${groupId}.jes.elastic.APM.monitor;
 import static ${groupId}.jes.elastic.Logging.logKafka;
 import static ${groupId}.jes.util.Configuration.loadDefault;
 import static ${groupId}.jes.util.Event.changed;
@@ -36,7 +35,6 @@ import java.util.logging.Level;
 import javax.json.JsonObject;
 import ${groupId}.jes.Aggregate;
 import ${groupId}.jes.Reactor;
-import ${groupId}.jes.util.Fanout;
 import ${groupId}.jes.util.Streams;
 import org.apache.kafka.streams.StreamsBuilder;
 import org.apache.kafka.streams.Topology;
@@ -50,12 +48,8 @@ import org.reactivestreams.Publisher;
 public class Application {
   private static final String AGGREGATE_TYPE = "counter";
   private static final String APP = "plusminus";
-  private static final String AUDIT = "audit";
-  private static final String AUTH = "authorizationHeader";
   private static final String DEV = "dev";
-  private static final String ELASTIC_APM = "elastic.apm";
   private static final String ENVIRONMENT = "environment";
-  private static final String FANOUT = "fanout";
   private static final String INFO = "INFO";
   private static final String KAFKA = "kafka";
   private static final String LOG_LEVEL = "logLevel";
@@ -64,11 +58,8 @@ public class Application {
   private static final String MONGODB_DATABASE = "mongodb.database";
   private static final String MONGODB_URI = "mongodb.uri";
   private static final String PLUS = "plus";
-  private static final String REALM_ID = "realmId";
-  private static final String REALM_KEY = "realmKey";
-  private static final String URI = "uri";
   private static final String VALUE = "value";
-  private static final String VERSION = "1.0.3";
+  private static final String VERSION = "${version}";
 
   static StreamsBuilder createApp(
       final StreamsBuilder builder, final Config config, final MongoClient mongoClient) {
@@ -81,23 +72,10 @@ public class Application {
             .withEnvironment(environment)
             .withBuilder(builder)
             .withMongoDatabase(mongoClient.getDatabase(config.getString(MONGODB_DATABASE)))
-            .withBreakingTheGlass()
-            .withMonitoring(true)
-            .withAudit(AUDIT + "-" + environment)
             .withReducer(PLUS, (command, currentState) -> reduce(currentState, v -> v + 1))
             .withReducer(MINUS, (command, currentState) -> reduce(currentState, v -> v - 1));
 
     aggregate.build();
-
-    tryToGetSilent(() -> config.getConfig(FANOUT))
-        .ifPresent(
-            fanout ->
-                Fanout.connect(
-                    aggregate.replies(), fanout.getString(REALM_ID), fanout.getString(REALM_KEY)));
-
-    tryToGetSilent(() -> config.getConfig(ELASTIC_APM))
-        .ifPresent(apm -> monitor(aggregate, apm.getString(URI), apm.getString(AUTH)));
-
     tryToGetSilent(() -> config.getString(LOG_TOPIC))
         .ifPresent(topic -> logKafka(aggregate, logLevel, VERSION, topic));
 
