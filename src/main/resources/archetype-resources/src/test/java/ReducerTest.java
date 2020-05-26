@@ -9,11 +9,11 @@ import static ${groupId}.jes.util.Streams.fromConfig;
 import static ${package}.Application.createApp;
 import static ${package}.Application.getMongoClient;
 import static ${groupId}.util.Util.tryToDoWithRethrow;
-import static org.junit.Assert.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import com.typesafe.config.Config;
 import java.io.File;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 public class ReducerTest {
   private static final String ENVIRONMENT = "environment";
