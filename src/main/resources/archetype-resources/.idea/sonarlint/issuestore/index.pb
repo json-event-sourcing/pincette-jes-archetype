@@ -17,3 +17,6 @@ e
 create_topics.sh,9/8/981b65e354b64d240aacee560b88d2035829094d
 C
 create_archetype.sh,1/d/1d259415d180834a57e3820800fa6603ef2ae9ee
+:
+
+.gitignore,a/5/a5cc2925ca8258af241be7e5b0381edf30266302

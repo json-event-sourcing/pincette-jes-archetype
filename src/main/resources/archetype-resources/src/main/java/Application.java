@@ -20,8 +20,8 @@ import static ${groupId}.jes.util.Event.changed;
 import static ${groupId}.jes.util.JsonFields.COMMAND;
 import static ${groupId}.jes.util.JsonFields.ID;
 import static ${groupId}.jes.util.Mongo.addNotDeleted;
-import static ${groupId}.jes.util.Mongo.aggregationPublisher;
 import static ${groupId}.jes.util.Streams.start;
+import static ${groupId}.mongo.JsonClient.aggregationPublisher;
 import static ${groupId}.util.Collections.list;
 import static ${groupId}.util.Util.tryToDoWithRethrow;
 import static ${groupId}.util.Util.tryToGetSilent;
@@ -59,7 +59,7 @@ public class Application {
   private static final String MONGODB_URI = "mongodb.uri";
   private static final String PLUS = "plus";
   private static final String VALUE = "value";
-  private static final String VERSION = "1.0.5";
+  private static final String VERSION = "${version}";
 
   static StreamsBuilder createApp(
       final StreamsBuilder builder, final Config config, final MongoClient mongoClient) {
