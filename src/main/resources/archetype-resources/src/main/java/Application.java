@@ -59,7 +59,7 @@ public class Application {
   private static final String MONGODB_URI = "mongodb.uri";
   private static final String PLUS = "plus";
   private static final String VALUE = "value";
-  private static final String VERSION = "${version}";
+  private static final String VERSION = "1.0.7";
 
   static StreamsBuilder createApp(
       final StreamsBuilder builder, final Config config, final MongoClient mongoClient) {
