@@ -4,7 +4,7 @@
 
   <groupId>net.pincette</groupId>
   <artifactId>pincette-jes-archetype</artifactId>
-  <version>1.0.13</version>
+  <version>1.0.14</version>
   <packaging>maven-archetype</packaging>
   <name>pincette-jes-archetype</name>
   <description>JSON Event Sourcing Maven Artefact</description>
